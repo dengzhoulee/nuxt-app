@@ -43,4 +43,4 @@
   }
 </script>
 
-<style scoped src="assets/sass/my-orders.sass" lang="sass"></style>
+<style scoped src="static/sass/my-orders.sass" lang="sass"></style>

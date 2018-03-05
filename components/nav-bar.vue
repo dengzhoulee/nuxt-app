@@ -15,29 +15,29 @@
             path: '/',
             name: 'index',
             text: '商城',
-            icon: require('assets/images/store.png'),
-            activeIcon: require('assets/images/store-on.png')
+            icon: require('static/images/store.png'),
+            activeIcon: require('static/images/store-on.png')
           },
           {
             path: '/order',
             name: 'order',
             text: '订单',
-            icon: require('assets/images/order.png'),
-            activeIcon: require('assets/images/order-on.png')
+            icon: require('static/images/order.png'),
+            activeIcon: require('static/images/order-on.png')
           },
           {
             path: '/cards',
             name: 'cards',
             text: '卡包',
-            icon: require('assets/images/card.png'),
-            activeIcon: require('assets/images/card-on.png')
+            icon: require('static/images/card.png'),
+            activeIcon: require('static/images/card-on.png')
           },
           {
             path: '/mine',
             name: 'mine',
             text: '我的',
-            icon: require('assets/images/card.png'),
-            activeIcon: require('assets/images/card-on.png')
+            icon: require('static/images/card.png'),
+            activeIcon: require('static/images/card-on.png')
           }
         ]
       }

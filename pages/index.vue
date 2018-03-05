@@ -12,4 +12,4 @@
   }
 </script>
 
-<style lang="sass" scoped src="assets/sass/index.sass"></style>
+<style lang="sass" scoped src="static/sass/index.sass"></style>

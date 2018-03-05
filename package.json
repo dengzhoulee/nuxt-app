@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "node-sass": "4.5.3",
+    "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.4",
-    "sass-loader": "6.0.5"
+    "sass-loader": "^6.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

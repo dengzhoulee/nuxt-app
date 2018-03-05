@@ -1,0 +1,21 @@
+@import './mixin'
+@import "./var"
+
+.my-orders-nav
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  +size-dpr(90px, height, line-height)
+  .order-link
+    width: 100%
+    height: 100%
+    text-align: center
+    text-decoration: none
+    box-sizing: border-box
+    color: #222
+    +font-dpr(28px)
+    &.nuxt-link-exact-active
+      color: $theme-color
+      +size-dpr(4px, border-bottom-width)
+      border-bottom: solid $theme-color

@@ -1,0 +1,29 @@
+@function strip-units($number)
+  @return $number / ($number * 0 + 1)
+
+$design-width: 750
+
+@function px2rem($px)
+  @return strip-units($px) / $design-width * 10 + rem
+
+@mixin font-dpr($font-size)
+  font-size: $font-size / 2
+  [data-dpr='2'] &
+    font-size: $font-size
+  [data-dpr='3'] &
+    font-size: $font-size / 2 * 3
+
+@mixin size-dpr($size, $properties...)
+  @each $property in $properties
+    #{$property}: $size / 2
+    [data-dpr='2'] &
+      #{$property}: $size
+    [data-dpr='3'] &
+      #{$property}: $size / 2 * 3
+
+@mixin flex-value($value)
+  flex: 0 0 $value / 2
+  [data-dpr='2'] &
+    flex: 0 0 $value
+  [data-dpr='3'] &
+    flex: 0 0 $value / 2 * 3

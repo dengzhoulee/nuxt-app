@@ -1,0 +1,33 @@
+@import './mixin'
+@import "./var"
+
+$iconSize: 36px
+
+#nav
+  +flex-value(98px)
+  +size-dpr(98px, height)
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  background: #FFFFFF
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.06)
+
+  .nav-link
+    user-select: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-decoration: none
+    height: 100%
+    width: 100%
+    justify-content: center
+    color: #bebebe
+    +font-dpr(24px)
+
+    &.nuxt-link-exact-active
+      color: $theme-color
+
+    img
+      +size-dpr(36px, width, height)
+      +size-dpr(8px, margin-bottom)

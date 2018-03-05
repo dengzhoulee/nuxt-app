@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : 'nuxt-app',
-      script    : 'nuxt build && nuxt start',
+      script    : '',
       env: {
         COMMON_VARIABLE: 'true'
       },
@@ -31,7 +31,7 @@ module.exports = {
       path : '/home/yaphet/nuxt-app/production',
       ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy-local': 'echo "deploy done!"',
-      'post-deploy' : 'yarn && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'yarn && pm2 reload ecosystem.config.js --env production && nuxt build && nuxt start',
       env  : {
         NODE_ENV: 'production'
       }

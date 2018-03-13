@@ -5,7 +5,7 @@
   "author": "l-d-z <dengzhouli@163.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nodemon -w ./server -w ./start.js --exec node ./start.js",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,16 +13,24 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
+    "koa": "^2.4.1",
+    "koa-router": "v7.2.1",
     "node-sass": "^4.5.3",
+    "nuxt": "^1.0.0",
     "pug": "^2.0.0-rc.4",
     "sass-loader": "^6.0.5"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest-node": "0.2.2",
+    "babel-preset-stage-3": "6.24.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "ramda": "^0.25.0"
   }
 }

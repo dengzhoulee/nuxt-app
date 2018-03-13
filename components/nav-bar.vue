@@ -50,4 +50,4 @@
   }
 </script>
 
-<style lang="sass" src="assets/sass/nav-bar.sass"></style>
+<style lang="sass" src="static/sass/nav-bar.sass"></style>

@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : 'nuxt-app',
-      script    : 'nuxt.config.js',
+      script    : 'start.js',
       env: {
         COMMON_VARIABLE: 'true'
       },
